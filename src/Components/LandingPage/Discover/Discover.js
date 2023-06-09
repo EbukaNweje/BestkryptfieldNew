@@ -170,8 +170,8 @@ background-position: center;
     position: relative;
 } */
 @media Screen and (max-width: 768px){
-    width:70%;
-    margin-left: 85px;
+    width:90%;
+    /* margin-left: 85px; */
 }
 @media Screen and (max-width: 425px){
     width: 100%;

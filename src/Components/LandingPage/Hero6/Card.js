@@ -28,6 +28,11 @@ margin: 0 5px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+
+@media Screen and (max-width: 768px){
+    width: 90%;
+    margin: 5px 0;
+}
 `;
 const H3 = styled.div`
 font-size: 18px;

@@ -27,6 +27,10 @@ display: flex;
 justify-content: center;
 align-items:center;
 padding-top: 80px;
+@media Screen and (max-width: 768px){
+    height: auto;
+    padding: 20px 0;
+}
 `;
 const Wrapper = styled.div`
 width: 68%;
@@ -34,6 +38,9 @@ height: 95%;
 display :flex;
 flex-direction: column;
 align-items: center;
+@media Screen and (max-width: 768px){
+    text-align: center;
+}
 
 `;
 const H1 = styled.div`
@@ -52,5 +59,9 @@ const Cardhold = styled.div`
 width :100%;
 display: flex;
 justify-content: space-between;
+
+@media Screen and (max-width: 768px){
+    flex-direction: column;
+}
 `;
 

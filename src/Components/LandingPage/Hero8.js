@@ -28,7 +28,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #0F192C;
+/* background-color: #0F192C; */
 padding: 30px 0;
 `;
 
@@ -48,11 +48,12 @@ height: auto;
 padding: 40px 0px 40px 30px;
 /* border: 1px solid #FFCC40; */
 border-radius: 0.6rem;
-background-color: #111D32;
+border: 1px solid skyblue;
 display: flex;
 justify-content: space-between;
 align-items: center;
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 
 @media Screen and (max-width: 768px){
     flex-direction: column;
@@ -72,7 +73,7 @@ justify-content: space-between;
 
 @media Screen and (max-width: 768px){
     flex-direction: column;
-    with: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -80,10 +81,9 @@ justify-content: space-between;
 
 `;
 const Text = styled.div`
-font-weight: 500;
-font-size: 17px;
-color: whitesmoke;
-
+font-weight: bold;
+font-size: 20px;
+color: #012C6D;
 `;
 const Button = styled.div`
 width: 130px;
