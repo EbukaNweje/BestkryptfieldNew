@@ -203,23 +203,3 @@ color: #0A1A32;
 
 `;
 
-const Button = styled.div`
-background-color: #a60a0a;
-width: 30%;
-padding: 0.8rem 0.2rem;
-text-align: center;
-color: white;
-border-radius: 0.5rem;
-font-size: 17px;
-font-weight: 500;
-margin-top: 2rem;
-cursor: pointer;
-transition: all 400ms;
-:hover{
-    background: none;
-    transition: background-color 1s;
-    border: 1px solid silver;
-}
-
-@media Screen and (max-width: 1024px){}
-`;
