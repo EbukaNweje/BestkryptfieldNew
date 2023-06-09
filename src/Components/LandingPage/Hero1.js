@@ -28,6 +28,7 @@ height: 70vh;
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 100px;
 @media Screen and (max-width: 768px){
   height :auto;
   padding: 15px 0;
@@ -39,6 +40,10 @@ height: 95%;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media Screen and (max-width: 768px){
+  width: 90%;
+}
 
 /* background-color: red; */
 `;
@@ -52,7 +57,11 @@ align-items: center;
 background-size: cover;
 background-position: center;
 background-image: url(${bg});
-border-radius: 5px 5px 0px 0px
+border-radius: 5px 5px 0px 0px;
+
+@media Screen and (max-width: 768px){
+  justify-content: center;
+}
 `;
 const Div = styled.div`
 width: 55%;
@@ -61,15 +70,27 @@ padding: 15px;
 display :flex;
 flex-direction: column;
 justify-content: center;
+
+@media Screen and (max-width: 768px){
+  width: 80%;
+}
 `;
 
 const H1 = styled.h1`
 color:white;
+
+@media Screen and (max-width: 768px){
+  font-size: 20px;
+}
 `;
 const H4 = styled.div`
 font-size: 20px;
 color:white;
 
+@media Screen and (max-width: 768px){
+ font-size: 16px;
+ font-weight: bold;
+}
 `;
 
 const Frame = styled.div`

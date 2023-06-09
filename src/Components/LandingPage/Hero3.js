@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from "styled-components"
+import styled from "styled-components";
+import bgbg from "./nnbg.jpg"
 
 const Hero3 = () => {
   return (
@@ -19,15 +20,23 @@ export default Hero3;
 
 const Container = styled.div`
 width: 100%;
-height: 30vh;
+height: 33vh;
 display: flex;
 justify-content: center;
 align-items: center;
+@media Screen and (max-width: 768px){
+    height: max-content;
+    margin-bottom: 20px;
+}
 `;
 const Wrapper = styled.div`
 width: 65%;
 height: 95%;
-background-color: #F6F7F8;
+background-image: url(${bgbg});
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/* background-color: #F6F7F8; */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -36,6 +45,10 @@ padding: 10px 35px;
 @media Screen and (max-width: 768px){
   align-items: center;
   text-align: center;
+  width: 95%;
+  height: max-content;
+  /* background-image: none; */
+/* background-color: #F6F7F8; */
 }
 /* align-items: center; */
 `;
@@ -51,14 +64,20 @@ font-size: 15px;
 margin-bottom: 10px;
 font-weight: 500;
 
+@media Screen and (max-width: 768px){
+  color: black;
+}
 
 `;
 const Button = styled.div`
-padding: 5px 5px;
-width: 90px;
+padding: 12px 9px;
+width: 130px;
 background-color: #2671D4;
 border-radius: 5px;
 margin: 5px 0 0 0;
 color: white;
-font-size: 15px;
+font-size: 12px;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
 `;

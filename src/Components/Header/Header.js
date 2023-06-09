@@ -44,6 +44,9 @@ display :flex;
 flex-direction: column;
 align-items: center;
 background-color: white;
+position: fixed;
+z-index: 500;
+background-color: whitesmoke;
 `;
 const Header1 = styled.div`
 width: 70%;
@@ -92,7 +95,9 @@ width: 70%;
 /* background-color: red; */
 display: flex;
 justify-content: space-between;
-align-items: center
+align-items: center;
+/* position: sticky;
+z-index: 500; */
 `;
 const LogoHold = styled.div`
 `;
@@ -127,23 +132,3 @@ cursor: pointer;
 
 
 
-/* const post = () =>{
-  const Items = {
-    id: states.length +1,
-    name: names,
-    sex: sexs,
-    course: courses,
-    age: ages
-  }
-  setState([...state, Items])
-
-  //empty the input
-  setName("")
-  setSexs("")
-  setCourses("")
-  setAges("")
-}
-
-<button onClick={() =>{
-  post()
-}}>Post</button> */

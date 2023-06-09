@@ -101,7 +101,6 @@ const P = styled.div`
 font-size: 23px;
 font-weight: lighter;
 color: grey;
-
 ;
 `;
 const Div = styled.div`
