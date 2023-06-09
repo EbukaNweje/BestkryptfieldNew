@@ -1,11 +1,10 @@
 import React, { useState} from 'react'
 import styled from 'styled-components'
 import {Link } from 'react-router-dom'
-import bg from './bg.jpg'
+import bg from './signin.jpg'
 import logo from './in-logo.png'
 
 const Login = () => {
-  const [referenceid, setReferenceId] = useState("")
   const [password, setPassword] = useState("")
   const [email, setEmail] = useState("")
   return (
@@ -16,22 +15,10 @@ const Login = () => {
               <LogoImg src={logo} alt="Logo"/>
             </Link>
           </LogoDiv>
-          {/* <Welcome>
-              <WelText>Welcome to <span>kryptbase assets</span> </WelText>
-              <Parg>Our goal here is to provide investors with a platform that is trustworthy, 
-                reliable and efficient.</Parg>
-            </Welcome>
-            <FirstFooter>
-              <FirstFooterText1>© 2020 preeminentcryptotrade.com ! </FirstFooterText1>
-              <FirstFooterText2>
-                <span><Link to="/contact" style={{color: "gray"}}>Contact</Link></span>
-              </FirstFooterText2>
-            </FirstFooter> */}
       </FirstContainer>
       <SecondContainer>
         <Header2>Create Account</Header2>
         <FormInput>
-          <FirstNameInput type="text"  placeholder="Reference ID(Optional)(*)" value={referenceid} onChange ={(e)=>{setReferenceId(e.target.value)}}/>
           <EmailInput type="email" required placeholder="Email Address(*)" value={email} onChange ={(e)=>{setEmail(e.target.value)}}/>
           <Password type="password" required placeholder="Input Password(*)" value={password} onChange ={(e)=>{setPassword(e.target.value)}}/>
           <ButtonContainer>
@@ -186,6 +173,7 @@ const EmailInput = styled.input`
   border: 0;
   border-radius: 5px;
   background: #f9f9fb;
+  border: 1px solid grey;
   outline: none;
   padding-left: 3%;
   margin-bottom: 2%;
@@ -286,6 +274,7 @@ const Password = styled.input`
   border: 0;
   border-radius: 5px;
   background: #f9f9fb;
+  border: 1px solid grey;
   outline: none;
   padding-left: 3%;
   margin-bottom: 2%;

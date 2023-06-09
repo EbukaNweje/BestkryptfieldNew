@@ -1,13 +1,13 @@
 import React, { useState} from 'react'
 import styled from 'styled-components'
 import {Link } from 'react-router-dom'
-import bg from './bg.jpg'
+import bg from './signin.jpg'
 import logo from './in-logo.png'
 
 const Register = () => {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
-  const [referenceid, setReferenceId] = useState("")
+  const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [confirmPassword, setconfirmPassword] = useState("")
   const [gender, setGender] = useState("")
@@ -42,9 +42,9 @@ const Register = () => {
         </FirstParagraph>
         <Header2>Create Account</Header2>
         <FormInput>
-          <FirstNameInput type="text"  placeholder="Reference ID(Optional)(*)" value={referenceid} onChange ={(e)=>{setReferenceId(e.target.value)}}/>
           <FirstNameInput type="text" required placeholder="First Name(*)" value={firstName} onChange ={(e)=>{setFirstName(e.target.value)}}/>
           <LastNameInput type="text" required placeholder="Last Name(*)" value={lastName} onChange ={(e)=>{setLastName(e.target.value)}}/>
+          <LastNameInput type="text" required placeholder="User Name(*)" value={username} onChange ={(e)=>{setUsername(e.target.value)}}/>
           <EmailInput type="email" required placeholder="Email Address(*)" value={email} onChange ={(e)=>{setEmail(e.target.value)}}/>
           <PhoneNumber type="text" required placeholder="Phone Number(*)" value={phoneNumber} onChange ={(e)=>{setPhoneNumber(e.target.value)}}  />
           <SelectCountry value={gender} required onChange ={(e)=>{setGender(e.target.value)}} >
@@ -173,7 +173,7 @@ const Header2 = styled.h2`
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  margin: 0 0 10% 0;
+  margin: 30px 0;
 `
 
 const FormInput = styled.form`
@@ -190,6 +190,8 @@ const FirstNameInput = styled.input`
   outline: none;
   padding-left: 3%;
   margin-bottom: 2%;
+  border: 1px solid grey;
+
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -201,6 +203,7 @@ const LastNameInput = styled.input`
   border-radius: 5px;
   background: #f9f9fb;
   outline: none;
+  border: 1px solid grey;
   padding-left: 3%;
   margin-bottom: 2%;
   @media (max-width: 768px) {
@@ -215,6 +218,7 @@ const EmailInput = styled.input`
   border-radius: 5px;
   background: #f9f9fb;
   outline: none;
+  border: 1px solid grey;
   padding-left: 3%;
   margin-bottom: 2%;
   @media (max-width: 768px) {
@@ -255,6 +259,7 @@ const PhoneNumber = styled.input`
   height: 7vh;
   border: 0;
   border-radius: 5px;
+  border: 1px solid grey;
   background: #f9f9fb;
   outline: none;
   padding-left: 3%;
@@ -272,41 +277,13 @@ const SelectCountry = styled.select`
   background: #f9f9fb;
   outline: none;
   padding-left: 3%;
+  border: 1px solid grey;
   margin-bottom: 2%;
   color: gray;
   @media (max-width: 768px) {
     width: 93%;
   }
-`
-/* const SelectAccount = styled.select`
-  width: 60%;
-  height: 7vh;
-  border: 0;
-  border-radius: 5px;
-  background: #f9f9fb;
-  outline: none;
-  padding-left: 3%;
-  margin-bottom: 2%;
-  color: gray;
-  @media (max-width: 768px) {
-    width: 93%;
-  }
-`
-
-const SelectPackage = styled.select`
-  width: 60%;
-  height: 7vh;
-  border: 0;
-  border-radius: 5px;
-  background: #f9f9fb;
-  outline: none;
-  padding-left: 3%;
-  margin-bottom: 2%;
-  color: gray;
-  @media (max-width: 768px) {
-    width: 93%;
-  }
-` */
+`;
 
 const Password = styled.input`
   width: 57%;
@@ -314,6 +291,7 @@ const Password = styled.input`
   border: 0;
   border-radius: 5px;
   background: #f9f9fb;
+  border: 1px solid grey;
   outline: none;
   padding-left: 3%;
   margin-bottom: 2%;
@@ -325,7 +303,8 @@ const Password = styled.input`
 const ConfirmPassword = styled.input`
   width: 57%;
   height: 7vh;
-  border: 0;
+  border: 1px solid grey;
+  /* border: 0; */
   border-radius: 5px;
   background: #f9f9fb;
   outline: none;
