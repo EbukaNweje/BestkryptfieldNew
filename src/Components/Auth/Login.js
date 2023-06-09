@@ -29,12 +29,6 @@ const Login = () => {
             </FirstFooter> */}
       </FirstContainer>
       <SecondContainer>
-        <FirstParagraph>
-          Already a member?
-          <span>
-            <Link to="/login">Login</Link>
-          </span>
-        </FirstParagraph>
         <Header2>Create Account</Header2>
         <FormInput>
           <FirstNameInput type="text"  placeholder="Reference ID(Optional)(*)" value={referenceid} onChange ={(e)=>{setReferenceId(e.target.value)}}/>
@@ -43,6 +37,12 @@ const Login = () => {
           <ButtonContainer>
             <Button>Register</Button>
           </ButtonContainer>
+          <FirstParagraph>
+          Not yet a member?
+          <span>
+            <Link to="/register">Register</Link>
+          </span>
+        </FirstParagraph>
         </FormInput>
       </SecondContainer>
     </MainContainer>
@@ -52,7 +52,7 @@ const Login = () => {
 export default Login;
 
 const Button = styled.div`
-background-color: #a60a0a;
+background-color: #0A1A32;
 width: 30%;
 padding: 0.8rem 0.2rem;
 text-align: center;

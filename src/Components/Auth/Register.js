@@ -79,7 +79,7 @@ const Register = () => {
 export default Register;
 
 const Button = styled.div`
-background-color: #a60a0a;
+background-color: #0A1A32;
 width: 30%;
 padding: 0.8rem 0.2rem;
 text-align: center;
@@ -116,7 +116,7 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: max-content;
     @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -132,7 +132,7 @@ const FirstContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 120vh;
 
   @media (max-width: 768px) {
   height: 70vh;
