@@ -30,12 +30,12 @@ const Header = () => {
           <Logo src={logo} alt="logo"/>
         </LogoHold>
         <NavHold>
-          <Nav2><Nav>Home</Nav></Nav2>
-          <Nav2><Nav>Markets</Nav></Nav2>
-          <Nav2><Nav>Company</Nav></Nav2>
-          <Nav2><Nav>Planning Services</Nav> <IoIosArrowDown/> </Nav2>
-          <Nav2><Nav>Education</Nav> <IoIosArrowDown/></Nav2>
-          <Nav2><Nav>Resources</Nav> <IoIosArrowDown/></Nav2>
+          <Nav2><Nav to='/'>Home</Nav></Nav2>
+          <Nav2><Nav to="/markets">Markets</Nav></Nav2>
+          <Nav2><Nav to='/company'>Company</Nav></Nav2>
+          <Nav2><Nav to='/planning'>Planning Services</Nav> <IoIosArrowDown/> </Nav2>
+          <Nav2><Nav to='education'>Education</Nav></Nav2>
+          <Nav2><Nav to='/resources'>Resources</Nav> <IoIosArrowDown/></Nav2>
         </NavHold>
         <BurgerHold>
           {click? <FaTimes onClick={HandleClick} style={{color: "grey"}}/> : <FaBars style={{color: "grey"}} onClick={HandleClick}/>}
@@ -137,6 +137,9 @@ justify-content: space-between;
 align-items: center;
 /* position: sticky;
 z-index: 500; */
+@media Screen and (max-width: 1280px){
+    width: 80%
+}
 `;
 const LogoHold = styled.div`
 `;
@@ -166,9 +169,10 @@ cursor: pointer;
   color: blue;
 }
 `;
-const Nav = styled.div`
+const Nav = styled(Link)`
 color: #0A1A32;
 cursor: pointer;
+text-decoration: none;
 `;
 
 

@@ -55,13 +55,20 @@ const Register = () => {
           </SelectCountry>
           <Password type="password" required placeholder="Input Password(*)" value={password} onChange ={(e)=>{setPassword(e.target.value)}}/>
           <ConfirmPassword type="password" required placeholder="Confirm Password(*)"  value={confirmPassword} onChange ={(e)=>{setconfirmPassword(e.target.value)}}/>
+          <Code>
+            <span style={{transform: "rotate(-35deg)", "-webkit transform": "rotate(-35deg)"}}>3</span>
+            <span style={{transform: "rotate(-36deg)", "-webkit transform": "rotate(-36deg)"}}>2</span>
+            <span style={{transform: "rotate(14deg)", "-webkit transform": "rotate(14deg)"}}>7</span>
+            <span style={{transform: "rotate(-40deg)", "-webkit transform": "rotate(-40deg)"}}>5</span>
+            <span style={{transform: "rotate(-12deg)", "-webkit transform": "rotate(-12deg)"}}>0</span>
+            <span style={{transform: "rotate(10deg)", "-webkit transform": "rotate(10deg)"}}>4</span>
+            <span style={{transform: "rotate(-18deg)", "-webkit transform": "rotate(-18deg)"}}>8</span>
+            <span style={{transform: "rotate(10deg)", "-webkit transform": "rotate(10deg)"}}>1</span>
+            </Code>
+          <EmailInput placeholder='Enter Code'/>
           <CheckBoxContainer>
             <CheckBox type="checkbox" required />
-            <p>I am 18 years of age or older(*)</p>
-          </CheckBoxContainer>
-          <CheckBoxContainer>
-            <CheckBox type="checkbox" required />
-            <p>I Agree to the terms and conditions(*)</p>
+            <p>I Agree with Terms and Policy(*)</p>
           </CheckBoxContainer>
           <Instruction>
             (All fields with (*) are required. Kindly Check to ensure all fields are
@@ -135,10 +142,11 @@ const FirstContainer = styled.div`
   height: 120vh;
 
   @media (max-width: 768px) {
-  height: 70vh;
+  /* height: 70vh;
   width: 100%;
   flex-wrap: nowrap;
-  flex-direction: column;
+  flex-direction: column; */
+  display: none;
 }
 `
 
@@ -299,6 +307,31 @@ const Password = styled.input`
     width: 90%;
   }
 `
+const Code = styled.div`
+width: 58%;
+height: 7vh;
+/* background-color: rebeccapurple; */
+background-color: #003;
+color: white;
+border-radius: 0.4rem;
+padding: 4px 9px;
+margin: 5px 0 10px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: x-large;
+font-style: oblique;
+font-family: 'Henny Penny', cursive;
+/* font-family: 'Henny Penny'; */
+/* font-family:cursive; */
+letter-spacing: 20px;
+user-select: none;
+/* span{
+  float: left;
+transform: rotate(-25deg);
+-webkit-transform: rotate(-25deg)
+} */
+`;
 
 const ConfirmPassword = styled.input`
   width: 57%;
@@ -319,6 +352,8 @@ const CheckBox = styled.input`
   display: flex;
   align-items: flex-start;
   margin: 0;
+  width: 1rem;
+  height: 1rem;
 `
 
 const CheckBoxContainer = styled.div`

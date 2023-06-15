@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import {FaMoneyBill, FaChartBar, FaCoins} from 'react-icons/fa';
-import slider1 from './forex.jpeg';
+// import slider1 from './forex.jpeg';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 // import data from './land.json'
@@ -142,6 +142,11 @@ margin-top: 15px;
 const Div3 = styled.div`
 width: 100%;
 text-align: center;
+@media Screen and (max-width: 768px){
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 `;
 const BoxHold = styled.div`
 display: flex;
@@ -151,6 +156,8 @@ margin: 40px 0 0 0;
 
 @media Screen and (max-width: 1024px){
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 `;
 const Box = styled.div`
@@ -170,7 +177,7 @@ margin: 10px 0;
 }
 
 @media Screen and (max-width: 768px){
-width: 300px;
+width: 230px;
 }
 
 `;

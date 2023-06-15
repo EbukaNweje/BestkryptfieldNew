@@ -40,6 +40,7 @@ align-items: center;
 
 @media Screen and (max-width: 768px){
     height: auto;
+    padding: 40px 0;
 }
 `;
 const Wrapper = styled.div`

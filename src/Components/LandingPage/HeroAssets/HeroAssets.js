@@ -86,6 +86,10 @@ font-size: 30px;
 font-weight: 500;
 color: #012C6D;
 margin-bottom: 20px;
+
+@media Screen and (max-width: 600px){
+font-size: 25px;
+}
 `;
 const H4 = styled.div`
 color: #012C6D;
@@ -94,13 +98,17 @@ margin-bottom: 10px;
 font-weight: 500;
 
 @media Screen and (max-width: 768px){
-    font-size: 30px;
+    font-size: 20px;
 }
 `;
 const P = styled.div`
 font-size: 23px;
 font-weight: lighter;
 color: grey;
+
+@media Screen and (max-width: 600px){
+font-size: 20px;
+}
 ;
 `;
 const Div = styled.div`

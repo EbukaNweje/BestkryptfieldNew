@@ -143,6 +143,10 @@ font-weight: 500;
 const P = styled.div`
 color: grey;
 font-size: 17px;
+
+@media Screen and (max-width: 768px){
+    font-size: 15px;
+}
 `;
 const Space = styled.div`
 width: 22%;

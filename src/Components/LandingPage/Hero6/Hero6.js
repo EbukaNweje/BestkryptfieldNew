@@ -48,12 +48,18 @@ font-size: 30px;
 color: #012C6D;
 font-weight: bold;
 margin: 15px 0;
+@media Screen and (max-width: 768px){
+font-size: 22px;
+}
 `;
 const H4 = styled.div`
 font-size: 20px;
 color: grey;
 text-align: center;
 margin-bottom: 10px;
+@media Screen and (max-width: 768px){
+font-size: 17px;
+}
 `;
 const Cardhold = styled.div`
 width :100%;
@@ -62,6 +68,7 @@ justify-content: space-between;
 
 @media Screen and (max-width: 768px){
     flex-direction: column;
+    align-items: center;
 }
 `;
 

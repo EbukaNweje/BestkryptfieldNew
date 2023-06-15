@@ -27,6 +27,7 @@ align-items: center;
 @media Screen and (max-width: 768px){
     height: max-content;
     margin-bottom: 20px;
+
 }
 `;
 const Wrapper = styled.div`
@@ -45,10 +46,10 @@ padding: 10px 35px;
 @media Screen and (max-width: 768px){
   align-items: center;
   text-align: center;
-  width: 95%;
+  width: 100%;
   height: max-content;
-  /* background-image: none; */
-/* background-color: #F6F7F8; */
+  background-image: none;
+background-color: #F6F7F8;
 }
 /* align-items: center; */
 `;

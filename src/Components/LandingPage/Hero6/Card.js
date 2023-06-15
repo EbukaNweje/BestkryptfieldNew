@@ -8,7 +8,6 @@ const Card = (props) =>{
             <Down>
                 <Name>{props.name}Thomas Brown</Name>
                 <Title>{props.title}
-                    MARKETING DIRECTOR AT DEFI INC
                 </Title>
             </Down>
         </Hold>
@@ -30,7 +29,7 @@ flex-direction: column;
 justify-content: space-between;
 
 @media Screen and (max-width: 768px){
-    width: 90%;
+    width: 100%;
     margin: 5px 0;
 }
 `;

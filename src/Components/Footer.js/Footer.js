@@ -1,9 +1,11 @@
 import React from 'react';
 import {
     Container,Line3, Col1,
-    Col2, Col3, Image, Imag,Footer2,Cryp
+    Col2, Col3, Image, Imag,Footer2,Cryp, FirstLine,Line,
+    H4, Mail, Need,NeedHelp,
 } from './FooterStyle';
 import Logo from "./in-logo.png"
+import { FaEnvelopeOpenText } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -17,7 +19,17 @@ const Footer = () => {
 
     return (
         <Container>
-            {/* <H1>okx exchange</H1> */}
+            <FirstLine>
+            <Line></Line>
+            <Need>
+                <NeedHelp>NEED HELP?</NeedHelp>
+                <Mail>
+                    <FaEnvelopeOpenText/>
+                    <H4>Email</H4>
+                </Mail>
+            </Need>
+            <Line></Line>
+            </FirstLine>
             <Line3>
                 <Col1>
                     <span style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "10px", color: "#0459B9" }}>Market</span>
@@ -52,7 +64,7 @@ const Footer = () => {
                     </Image>
                     <span style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "10px", color: "#0459B9" }}>Contact Information</span>
                     {/* <a href="/support" style={{ color: "black" }}>FAQ's</a> */}
-                    <p style={{ color: "black" }}>bestkrypfield@gmail.com</p>
+                    <p style={{ color: "black", lineHeight:"12px" }}>bestkrypfield<br/>@gmail.com</p>
                     <a href="/register" style={{ color: "black" }}>bestkrypfield.com</a>
                     {/* <a href="/faqdet" style={{ color: "black" }}>Reports</a> */}
                 </Col3>
@@ -70,7 +82,7 @@ const Footer = () => {
 
 ***The nature of relationships between Kryptbase Assets and Fidelity Digital Assets: bestkrypfield is a client of Fidelity’s Custodial Services.
 
-Past performance of any Fund or strategy is not predictive of future performance. Investors should be aware that a total loss of principal may occur. The material provided herein is for informational purposes only. It does not constitute an offer to sell or a solicitation of an offer to buy any interests in the Fund or any other securities. Any offering of a Fund will be made only in accordance with the terms and conditions set forth in the Fund's Private Placement Memorandum or similar document (Offering Materials). Prior to investing, investors are strongly urged to review carefully the Offering Materials including the risks, the Limited Partnership Agreement and the Subscription Documents. Investors are advised to discuss any prospective investment in the Fund with their legal and tax advisers in order to make an independent determination of the suitability and consequences of an investment. Investments discussed on this site are suitable only for sophisticated investors who fully understand, and are willing to assume, the risks involved in the investments, Funds and strategies presented. Kryptbase Assets , does not offer a complete investment program. The investments and strategies presented on this site involve a substantial degree of risk, including the risk of total loss of an investor's capital. No person has been authorized to give any information or to make any representation, warranty, statement or assurance not contained in the Offering Materials and, if given or made, such other information or representation, warranty, statement or assurance may not be relied upon. Prospective investors should inform themselves and take appropriate advice as to any applicable legal requirements and any applicable taxation and exchange control regulations in the countries of their citizenship, residence or domicile which might be relevant to the purchase, holding or redemption of interests. Kryptbase Assets is registered with the US Securities & Exchange Commission as an investment adviser, CRD 305726. Please see this site for more information, our disclosure brochure and our relationship summary https://adviserinfo.sec.gov/firm/summary/305726
+Past performance of any Fund or strategy is not predictive of future performance. Investors should be aware that a total loss of principal may occur. The material provided herein is for informational purposes only. It does not constitute an offer to sell or a solicitation of an offer to buy any interests in the Fund or any other securities. Any offering of a Fund will be made only in accordance with the terms and conditions set forth in the Fund's Private Placement Memorandum or similar document (Offering Materials). Prior to investing, investors are strongly urged to review carefully the Offering Materials including the risks, the Limited Partnership Agreement and the Subscription Documents. Investors are advised to discuss any prospective investment in the Fund with their legal and tax advisers in order to make an independent determination of the suitability and consequences of an investment. Investments discussed on this site are suitable only for sophisticated investors who fully understand, and are willing to assume, the risks involved in the investments, Funds and strategies presented. Kryptbase Assets , does not offer a complete investment program. The investments and strategies presented on this site involve a substantial degree of risk, including the risk of total loss of an investor's capital. No person has been authorized to give any information or to make any representation, warranty, statement or assurance not contained in the Offering Materials and, if given or made, such other information or representation, warranty, statement or assurance may not be relied upon. Prospective investors should inform themselves and take appropriate advice as to any applicable legal requirements and any applicable taxation and exchange control regulations in the countries of their citizenship, residence or domicile which might be relevant to the purchase, holding or redemption of interests. Kryptbase Assets is registered with the US Securities & Exchange Commission as an investment adviser, CRD 305726. Please see this site for more information, our disclosure brochure and our relationship summary https://adviserinfo.sec.gov/firm/summary<br/>/305726
             </p>
            </Footer2>
 

@@ -1,5 +1,48 @@
 import styled from "styled-components";
 
+export const FirstLine = styled.div`
+width: 70%;
+height: 30vh;
+display: flex;
+flex-direction: column;
+
+@media Screen and (max-width: 1280px){
+    width: 80%;
+}
+`;
+export const Line = styled.div`
+width: 100%;
+height: 1px;
+background-color: silver;
+`;
+export const H4 = styled.div`
+color:#012C6D;
+font-size: 16px;
+margin-left: 7px;
+`;
+export const NeedHelp = styled.div`
+font-size: 15px;
+color: grey;
+letter-spacing: 0.2rem;
+font-family: poppins, monospace;
+`;
+export const Need = styled.div`
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin: 35px 0;
+
+`;
+export const Mail = styled.div`
+width: auto;
+display: flex;
+align-items: center;
+margin-left: 30px;
+color:#012C6D;
+
+`;
+
+
 export const Container = styled.div`
 width: 100%;
 height: auto;
@@ -40,14 +83,15 @@ font-size: 30px;
 // `;
 
 export const Line3 = styled.div`
-width: 85%;
+width: 70%;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 margin: 45px 0 15px 0;
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 1280px){
     display: flex;
-    width: 100%;
+    width: 80%;
+    /* background-color: red; */
   }
 
 
@@ -186,12 +230,16 @@ export const Image = styled.div`
 `
 export const Imag = styled.img`
     width: 200px;
-    @media screen and (max-width: 426px){
-    width: 150px;
+    @media Screen and (max-width: 426px){
+    width: 100px;
   }
 `
 export const Footer2=styled.div`
-   width :90% ;
+   width :70%;
+
+   @media Screen and (max-width: 1280px){
+    width: 80%;
+   }
 `
 export const Cryp= styled.div`
     

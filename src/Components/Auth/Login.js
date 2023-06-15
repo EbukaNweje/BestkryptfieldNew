@@ -21,11 +21,22 @@ const Login = () => {
         <FormInput>
           <EmailInput type="email" required placeholder="Email Address(*)" value={email} onChange ={(e)=>{setEmail(e.target.value)}}/>
           <Password type="password" required placeholder="Input Password(*)" value={password} onChange ={(e)=>{setPassword(e.target.value)}}/>
+          <Code>
+            <span style={{transform: "rotate(-35deg)", "-webkit transform": "rotate(-35deg)"}}>3</span>
+            <span style={{transform: "rotate(-36deg)", "-webkit transform": "rotate(-36deg)"}}>2</span>
+            <span style={{transform: "rotate(14deg)", "-webkit transform": "rotate(14deg)"}}>7</span>
+            <span style={{transform: "rotate(-40deg)", "-webkit transform": "rotate(-40deg)"}}>5</span>
+            <span style={{transform: "rotate(-12deg)", "-webkit transform": "rotate(-12deg)"}}>0</span>
+            <span style={{transform: "rotate(10deg)", "-webkit transform": "rotate(10deg)"}}>4</span>
+            <span>8</span>
+            <span style={{transform: "rotate(10deg)", "-webkit transform": "rotate(10deg)"}}>1</span>
+            </Code>
+          <EmailInput placeholder='Enter Code'/>
           <ButtonContainer>
             <Button>Register</Button>
           </ButtonContainer>
           <FirstParagraph>
-          Not yet a member?
+          Don't have an account?
           <span>
             <Link to="/register">Register</Link>
           </span>
@@ -77,8 +88,11 @@ const MainContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   height: 100vh;
-    @media (max-width: 768px) {
+    @media Screen and (max-width: 768px){
     flex-direction: column;
+    /* background-color: rebeccapurple; */
+    height: auto;
+    padding: 40px 0;
   }
 `
 
@@ -94,10 +108,11 @@ const FirstContainer = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-  height: 70vh;
+    display: none;
+  /* height: 70vh;
   width: 100%;
   flex-wrap: nowrap;
-  flex-direction: column;
+  flex-direction: column; */
 }
 `
 
@@ -165,7 +180,33 @@ const LastNameInput = styled.input`
   @media (max-width: 768px) {
     width: 90%;
   }
-`
+`;
+
+const Code = styled.div`
+width: 58%;
+height: 7vh;
+/* background-color: rebeccapurple; */
+background-color: #003;
+color: white;
+border-radius: 0.4rem;
+padding: 4px 9px;
+margin: 5px 0 10px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: x-large;
+font-style: oblique;
+font-family: 'Henny Penny', cursive;
+/* font-family: 'Henny Penny'; */
+/* font-family:cursive; */
+letter-spacing: 20px;
+user-select: none;
+/* span{
+  float: left;
+transform: rotate(-25deg);
+-webkit-transform: rotate(-25deg)
+} */
+`;
 
 const EmailInput = styled.input`
   width: 57%;
